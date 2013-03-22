@@ -94,48 +94,44 @@ textarea {
    ========================================================================== */
 
 body {
-    background: #CCC;
+    background: #fff;
 }
 
-.center {
-    padding-top: 25%;
-    padding-left: 50%;
-    perspective: 800px;
-}
-
-.wrapper {
-    width: 700px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -350px;
-    background: #555;
-    box-shadow: 3px 0px 3px #545454;
-    border-radius: 10px;
-}
-
-
-.card {
-    height: 100%;
-    width: 100%;
-    float: left;
-    background: white;
-    border-radius: 10px;
-    margin: 20px;
-
-    -webkit-transform-origin: -4% -4%;
-    -webkit-transform: rotate3d(-1, 1, 0, 7deg);
-
-    /* google font */
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-size: 40pt;
+.content {
     text-align: center;
-
+    margin-top: 5em;
+    font-family: 'Libre Baskerville', serif;
+    color: #797478;
 }
 
-.card .name {
-    border-bottom: .07em solid black;
+.name {
+    font-size: 3em;
 }
 
+.description {
+    display: inline-block;
+    text-align: center;
+    width: 600px;
+}
+
+.links {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.links a {
+    text-decoration: none;
+    color: #C8C8CB;
+    margin-right: 1em;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.links a:hover {
+    color: #74BCDB;
+}
 
 
 /* ==========================================================================

@@ -1,4 +1,0 @@
-Denys.me
---------
-
-    npm install
