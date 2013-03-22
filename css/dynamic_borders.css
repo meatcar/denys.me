@@ -2,7 +2,6 @@
   position: relative;
   width: 200px;
   height: 200px;
-  box-shadow: inset 0px 0px 100px #20071B;
 }
 .wrapper img {
   position: absolute;
