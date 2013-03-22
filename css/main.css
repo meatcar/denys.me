@@ -97,9 +97,14 @@ body {
     background: #fff;
 }
 
+.dynamic-avatar {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
 .content {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 30px;
     font-family: 'Libre Baskerville', serif;
     color: #20071B;
 }
@@ -115,14 +120,14 @@ body {
 }
 
 .links {
-    margin-top: 1em;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 .links a {
     text-decoration: none;
     color: #20071B;
     position: relative;
+    margin-right: 5px;
 }
 
 .links a:last-child {
@@ -131,10 +136,6 @@ body {
 
 .links a:hover {
     color: #FA1E4A;
-}
-
-.dynamic-avatar {
-    display: inline-block;
 }
 
 /* ==========================================================================
