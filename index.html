@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/dynamic_borders.css">
 
         <!--google fonts -->
         <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
@@ -21,7 +22,7 @@
         <!--/google fonts-->
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -30,8 +31,21 @@
 
         <!-- Add your site or application content here -->
         <div class="content">
+            <div class="dynamic-avatar">
+                <div class="wrapper">
+                    <div class="top">
+                        <div class="triangle left"></div>
+                        <div class="triangle right"></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="triangle right"></div>
+                        <div class="triangle left"></div>
+                    </div>
+                    <img src="img/me.jpg">
+                </div>
+            </div>
             <div class="name">Denys Pavlov</div>
-            <p class="description">Developer in Toronto, specializing in anything remotely interesting, and trying to make the world a better place.</p>
+            <p class="description">Developer in Toronto, specializing in everything interesting, trying to make the world a better place.</p>
             <div class="links">
                 <a href="mailto:denys.pavlov@gmail.com"><i class="icon-envelope-alt"></i></a>
                 <a href="http://facebook.com/denys.pavlov"><i class="icon-facebook-sign"></i></a>
@@ -41,17 +55,19 @@
             </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>-->
 
-          ga('create', 'UA-17918643-2', 'denys.me');
-          ga('send', 'pageview');
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+        <script src="js/dynamic_borders.js"></script>
+        <script>
+          // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          // ga('create', 'UA-17918643-2', 'denys.me');
+          // ga('send', 'pageview');
         </script>
 </html>

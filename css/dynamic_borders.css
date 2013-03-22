@@ -1,0 +1,37 @@
+.wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: inset 0px 0px 100px #20071B;
+}
+.wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 2;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0;
+}
+
+.top .triangle {
+  top: 0;
+}
+.bottom .triangle {
+  bottom: 0;
+}
+.left.triangle {
+  left: 0;
+  border-left-color: white;
+}
+.right.triangle {
+  right: 0;
+  border-right-color: white;
+}

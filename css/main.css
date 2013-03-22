@@ -101,7 +101,7 @@ body {
     text-align: center;
     margin-top: 5em;
     font-family: 'Libre Baskerville', serif;
-    color: #797478;
+    color: #20071B;
 }
 
 .name {
@@ -111,7 +111,7 @@ body {
 .description {
     display: inline-block;
     text-align: center;
-    width: 600px;
+    max-width: 600px;
 }
 
 .links {
@@ -121,8 +121,8 @@ body {
 
 .links a {
     text-decoration: none;
-    color: #C8C8CB;
-    margin-right: 1em;
+    color: #20071B;
+    position: relative;
 }
 
 .links a:last-child {
@@ -130,9 +130,12 @@ body {
 }
 
 .links a:hover {
-    color: #74BCDB;
+    color: #FA1E4A;
 }
 
+.dynamic-avatar {
+    display: inline-block;
+}
 
 /* ==========================================================================
    Helper classes
