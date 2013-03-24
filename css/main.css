@@ -111,6 +111,7 @@ body {
 
 .name {
     font-size: 3em;
+    letter-spacing: -1px;
 }
 
 .description {
