@@ -19,7 +19,7 @@ textarea {
 }
 
 body {
-    text-rendering: optimizeLegibiliity;
+    text-rendering: optimizeLegibility;
     font-size: 1em;
     line-height: 1.4;
 }
