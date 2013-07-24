@@ -117,8 +117,9 @@ body {
 
 .description {
     display: inline-block;
-    text-align: center;
-    max-width: 600px;
+    text-align: left;
+    max-width: 300px;
+    margin-left: 1em;
 }
 
 .links {
