@@ -1,6 +1,7 @@
 (function (app) {
-  app($, _, this.window, undefined);
+  app($, _, window, undefined);
 }(function ($, _, window){
+
   /*
    * Returns a uniformly random number between min and max
    */
@@ -19,6 +20,22 @@
     return {x: x, y: y};
   }
 
+  /**
+   * Resize the corner given the vertical orientation and element
+   * (top, $('triangle'))
+   */
+  function size_corner(dirs, min, max, el) {
+    var $el = $(el),
+        v = $el.parent().hasClass('top') ? 'top' : 'bottom',
+        h = $el.hasClass('right') ? 'right' : 'left',
+        width = [0, 0, 0, 0],
+        point = rand_point();
+    width[dirs[v]] = point.y + "px";
+    width[dirs[h]] = point.x + "px";
+    $el.css('border-width', width.join(' '));
+  }
+
+
   var min = 0,
       max,
       // Direction Indeces
@@ -33,20 +50,7 @@
     // get max width out of css
     max = $('.wrapper').first().css('width');
     max = parseInt(max, 10);
-    _.each($('.triangle'), size_corner);
+    _.each($('.triangle'), _.partial(size_corner, dirs, min, max));
   });
 
-  /**
-   * Resize the corner given the vertical orientation and element (top, $('triangle'))
-   */
-  function size_corner(el) {
-    var $el = $(el),
-        v = $el.parent().hasClass('top') ? 'top' : 'bottom',
-        h = $el.hasClass('right') ? 'right' : 'left',
-        width = [0, 0, 0, 0],
-        point = rand_point();
-    width[dirs[v]] = point.y + "px";
-    width[dirs[h]] = point.x + "px";
-    $el.css('border-width', width.join(' '));
-  }
 }));
