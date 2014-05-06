@@ -53,4 +53,8 @@
     _.each($('.triangle'), _.partial(size_corner, dirs, min, max));
   });
 
+  $(document).load(function (){
+    $('.content').show();
+  });
+
 }));
