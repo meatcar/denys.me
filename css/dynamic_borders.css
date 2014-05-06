@@ -18,6 +18,7 @@
   border-color: transparent;
   border-style: solid;
   border-width: 0;
+  transform: scale(1.001);
 }
 
 .top .triangle {
@@ -28,9 +29,9 @@
 }
 .left.triangle {
   left: 0;
-  border-left-color: rgba(255, 255, 255, 0);
+  border-left-color: white;
 }
 .right.triangle {
   right: 0;
-  border-right-color: rgba(255, 255, 255, 0);
+  border-right-color: white;
 }
