@@ -42,7 +42,7 @@ function size_corner(dirs,  max, el) {
 
 window.addEventListener('load', function (event) {
   feather.replace()
-  document.querySelector('.content').style.display = 'block';
+  document.querySelector('.content').style.display = null;
 
   // get max width out of css
   max = document.querySelector('.wrapper').getBoundingClientRect().width;
