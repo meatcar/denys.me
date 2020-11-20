@@ -1,13 +1,11 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 html {
    font-size: 16px;
 }
 
 body {
+    font-family: sans-serif;
     text-rendering: optimizeLegibility;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.4;
     max-width: 300px;
     margin: auto;
@@ -18,7 +16,7 @@ body {
     background: #fff;
 }
 
-.dynamic-avatar {
+.avatar {
     display: inline-block;
     margin-bottom: 30px;
 }
@@ -26,11 +24,11 @@ body {
 .content {
     text-align: center;
     margin-top: 30px;
-    font-family: serif;
     color: #20071B;
 }
 
 .name {
+    font-family: serif;
     font-size: 3rem;
     letter-spacing: -0.05em;
     margin: 0;
@@ -61,13 +59,9 @@ body {
 
 .links a {
     text-decoration: none;
-    color: #20071B;
+    color: #000;
     position: relative;
     margin-right: 5px;
-}
-
-.links a:last-child {
-    margin-right: 0;
 }
 
 .links a:hover {

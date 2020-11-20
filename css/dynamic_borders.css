@@ -9,6 +9,7 @@
   left: 0;
   width: 100%;
   z-index: -1;
+  border-radius: 50%;
 }
 .triangle {
   width: 0;
