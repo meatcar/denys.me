@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 .wrapper img {
   position: absolute;
@@ -22,16 +22,16 @@
 }
 
 .top .triangle {
-  top: 0;
+  top: -1px;
 }
 .bottom .triangle {
-  bottom: 0;
+  bottom: -1px;
 }
 .left.triangle {
-  left: 0;
+  left: -1px;
   border-left-color: white;
 }
 .right.triangle {
-  right: 0;
+  right: -1px;
   border-right-color: white;
 }
