@@ -2,19 +2,17 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Denys Pavlov</title>
         <meta name="description" content="Denys Pavlov's website and landing page">
-        <meta name="keywords" content="Denys Pavlov, Pavlov Denys, developer, programmer, computers, toronto">
+        <meta name="keywords" content="denys pavlov, pavlov denys, denys, pavlov, developer, programmer, software, toronto, canada">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
     </head>
     <body>
         <div class="content" style="display: none;">
             <div class="avatar">
-                <img src="img/me.gif">
+                <img src="img/me.gif" alt="me">
             </div>
             <h1 class="name">Denys Pavlov</h1>
             <p class="description">
@@ -32,7 +30,12 @@
         </div>
 
         <script src="https://unpkg.com/feather-icons"></script>
-        <script src="js/main.js"></script>
+        <script>
+            window.addEventListener('load', function (event) {
+              feather.replace()
+              document.querySelector('.content').style.display = null;
+            });
+        </script>
         <script>
            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
