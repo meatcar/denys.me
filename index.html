@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
     <head>
         <meta charset="utf-8">
         <title>Denys Pavlov</title>
         <meta name="description" content="Denys Pavlov's website and landing page">
         <meta name="keywords" content="denys pavlov, pavlov denys, denys, pavlov, developer, programmer, software, toronto, canada">
         <meta name="viewport" content="width=device-width">
+
+        <link rel="canonical" href="https://denys.me/">
+        <link rel="icon" href="/favicon.ico">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Denys Pavlov">
+        <meta property="og:description" content="Software developer in Toronto. Specializing in everything interesting.">
+        <meta property="og:url" content="https://denys.me/">
+        <meta property="og:image" content="https://denys.me/img/me.gif">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Denys Pavlov">
+        <meta name="twitter:description" content="Software developer in Toronto. Specializing in everything interesting.">
+        <meta name="twitter:image" content="https://denys.me/img/me.gif">
 
         <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
     </head>
@@ -21,10 +35,13 @@
             </p>
             <ul class="links">
                 <li>
-                    <a href="http://github.com/meatcar" title="github"><i data-feather="github"></i> github</a>
+                    <a href="https://github.com/meatcar" title="github" target="_blank" rel="noopener noreferrer"><i data-feather="github"></i> github</a>
                 </li>
                 <li>
                     <a href="mailto:me@denys.me" title="email"><i data-feather="mail"></i> email</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pavlovdenys/" title="linkedin" target="_blank" rel="noopener noreferrer"><i data-feather="linkedin"></i> linkedin</a>
                 </li>
             </ul>
         </div>
@@ -34,6 +51,14 @@
             window.addEventListener('load', function (event) {
               feather.replace()
               document.querySelector('.content').style.display = null;
+            });
+            document.querySelector('.links').addEventListener('click', function (event) {
+              var link = event.target.closest('a');
+              if (!link) return;
+              gtag('event', 'link_click', {
+                link_name: link.title,
+                link_url: link.href
+              });
             });
         </script>
         <!-- Google tag (gtag.js) -->
@@ -45,4 +70,5 @@
 
           gtag('config', 'G-99SW7C3VDS');
         </script>
+    </body>
 </html>
