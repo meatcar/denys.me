@@ -26,7 +26,7 @@
     <body>
         <div class="content" style="display: none;">
             <div class="avatar">
-                <img src="img/me.gif" alt="me">
+                <img src="img/me.gif" alt="me" width="200" height="200">
             </div>
             <h1 class="name">Denys Pavlov</h1>
             <p class="description">
@@ -35,21 +35,21 @@
             </p>
             <ul class="links">
                 <li>
-                    <a href="https://github.com/meatcar" title="github" target="_blank" rel="noopener noreferrer"><i data-feather="github"></i> github</a>
+                    <a href="https://github.com/meatcar" title="github" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i> github</a>
                 </li>
                 <li>
-                    <a href="mailto:me@denys.me" title="email"><i data-feather="mail"></i> email</a>
+                    <a href="mailto:me@denys.me" title="email"><i data-lucide="mail"></i> email</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/pavlovdenys/" title="linkedin" target="_blank" rel="noopener noreferrer"><i data-feather="linkedin"></i> linkedin</a>
+                    <a href="https://www.linkedin.com/in/pavlovdenys/" title="linkedin" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i> linkedin</a>
                 </li>
             </ul>
         </div>
 
-        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
         <script>
             window.addEventListener('load', function (event) {
-              feather.replace()
+              lucide.createIcons();
               document.querySelector('.content').style.display = null;
             });
             document.querySelector('.links').addEventListener('click', function (event) {

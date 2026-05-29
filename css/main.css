@@ -17,6 +17,13 @@ body {
     margin-bottom: 30px;
 }
 
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .content {
     text-align: center;
     margin-top: 30px;
@@ -37,26 +44,31 @@ body {
     margin-bottom: 0;
 }
 
-.links .feather {
-    font-size: 2.2rem;
+.links svg {
+    width: 1.4em;
+    height: 1.4em;
     vertical-align: middle;
 }
 
 .links {
-   text-align: left;
+   list-style: none;
    padding: 0;
-   display: inline-block;
+   margin: 1rem 0 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .links li {
-   display: inline-block;
    padding: 0.5rem;
 }
 
 .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
     text-decoration: none;
     color: #000;
-    margin-right: 5px;
 }
 
 .links a:hover {
